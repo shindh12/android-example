@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://www.google.com 동해물과 백두산이 마르고 닳도록 하나님이 보우아사 우리나라 만세"
+        android:lines="1"
+        android:autoLink="web"
+        />
+
+<!--
+    기본이 한줄 입력 사이즈, 유저가 키보드에서 엔터 치면 아래로 쭉 늘어나서 여러줄 입력..
+    초기부터 여러줄 입력 사이즈 나오게 lines="3" 3줄 고정으로, 더 이상 늘어나지 않는다.
+    유저는 3줄 내에서 스크롤 되면서 무한 입력은 되고
+-->
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:gravity="center"/>
+
+    <!--
+    기본 이미지뷰는 이벤트 처리를 못하므로 clickable 추가해야함
+    -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imagetest"
+        android:clickable="true"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="click me"
+        />
+</LinearLayout>
