@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    커스텀 View를 activity 개발자가 layout xml 등록해서 화면 구성할 때
+    개발자 임의 속성 추가 가능한가? 빌더가 인지 못하는 속성이라서 에러난다.
+    하려면 선언하고 사용해야 한다.
+-->
+    <declare-styleable name="AAA">
+        <attr name="scoreColor" format="color"/>
+    </declare-styleable>
+</resources>
